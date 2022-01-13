@@ -45,9 +45,9 @@ while 1:
     ti2 = info2[0][:-1]
     ep2 = info2[1]
     if ti1 != ti2:
-        print('if 1 is true')
+        #print('if 1 is true')
         if ti2 in list:
-            print('if 2 is true')
+            #print('if 2 is true')
             cap = f'═────⊹⋘•♢•⋙⊹────═\n『' +ti2+ f'』┇Episode ' + ep2 + f'\n═────⊹⋘•♢•⋙⊹────═'
             bot.send_photo(chat_id=TELEGRAM_CHAT_ID, photo=PHOTO_PATH, caption=cap)
     ti1 = ti2
