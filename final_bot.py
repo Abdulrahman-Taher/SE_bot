@@ -44,7 +44,7 @@ while 1:
     info2 = title.split("#")
     ti2 = info2[0][:-1]
     ep2 = info2[1]
-    if ti1 == ti2:
+    if ti1 != ti2:
         print('if 1 is true')
         if ti2 in list:
             print('if 2 is true')
