@@ -48,7 +48,7 @@ my_list2 = """#LeadaleNoDaichiNite
 #KimetsuNoYaiba Yuukaku-hen
 #AttackOnTitan Final Season P2
 #KarakaiJouzuNoTakagiSan S3
-#TensaiOujiNoAkajiKokkaSaiseiJutsu
+#TensaiOujiNoAkaji
 #VanitasNoCarte 2nd Cour
 #OnePiece
 #Boruto
