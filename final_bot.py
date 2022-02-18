@@ -4,7 +4,7 @@ import telegram
 
 TELEGRAM_BOT_TOKEN = '5014571744:AAFBHU3UqfoUAFuv4ZXWv7j00r5mhLIdgDQ'
 TELEGRAM_CHAT_ID = '-1001483409081'
-PHOTO_PATH = 'https://drive.google.com/file/d/13HOHISS1x6I9Kl6XnAAWXgFlYemH8TVQ/view?usp=sharing'
+PHOTO_PATH = 'https://drive.google.com/file/d/1_oZ7wyPXflD6h-xL-BEPKsTnaYHLeihK/view?usp=sharing'
 FEED_URL = 'https://www.livechart.me/feeds/episodes'
 
 bot = telegram.Bot(token=TELEGRAM_BOT_TOKEN)
