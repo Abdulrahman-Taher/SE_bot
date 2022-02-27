@@ -15,6 +15,7 @@ title = entry.title
 info1 = title.split("#")
 ti1 = info1[0][:-1]
 ep1 = info1[1]
+x = 0
 
 my_list = """Leadale no Daichi nite
 ORIENT
@@ -68,7 +69,7 @@ while 1:
     info2 = title.split("#")
     ti2 = info2[0][:-1]
     ep2 = info2[1]
-    if ti1 != ti2 or ti2 == "One Piece":
+    if ti1 != ti2 or x == 0:
         #print('if 1 is true')
         if ti2 in list:
             #print('if 2 is true')
@@ -77,5 +78,6 @@ while 1:
             ti22 = list2[ind]
             cap = f'═────⊹⋘•♢•⋙⊹────═\n『`%s`』┇EP%s\n═────⊹⋘•♢•⋙⊹────═'
             bot.send_photo(chat_id=TELEGRAM_CHAT_ID, photo=PHOTO_PATH, caption=cap%(ti22, ep2), parse_mode="MARKDOWN")
+            x = 1
     ti1 = ti2
     asyncio.run(main())
