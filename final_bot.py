@@ -4,7 +4,7 @@ import telegram
 
 TELEGRAM_BOT_TOKEN = '5014571744:AAFBHU3UqfoUAFuv4ZXWv7j00r5mhLIdgDQ'
 TELEGRAM_CHAT_ID = '-1001483409081'
-PHOTO_PATH = 'https://drive.google.com/file/d/1_oZ7wyPXflD6h-xL-BEPKsTnaYHLeihK/view?usp=sharing'
+PHOTO_PATH = 'https://drive.google.com/file/d/1J1tJGlyzKK1kohHry1wuC6f-gloy27u_/view?usp=sharing'
 FEED_URL = 'https://www.livechart.me/feeds/episodes'
 
 bot = telegram.Bot(token=TELEGRAM_BOT_TOKEN)
@@ -15,48 +15,47 @@ title = entry.title
 info1 = title.split("#")
 ti1 = info1[0][:-1]
 ep1 = info1[1]
+ep1 = '{:0>2}'.format(ep1)
 x = 0
 
-my_list = """Leadale no Daichi nite
-ORIENT
-Tokyo 24-ku
-Slow Loop
-Shikkakumon no Saikyou Kenja
-SABIKUI BISCO
-Fantasy Bishoujo Juniku Ojisan to
-Koroshi Ai
-Kimetsu no Yaiba: Yuukaku-hen
-Shingeki no Kyojin: The Final Season Part 2
-Karakai Jouzu no Takagi-san 3
-Tensai Ouji no Akaji Kokka Saisei Jutsu
-Vanitas no Carte 2nd Cour
-One Piece
-BORUTO: NARUTO NEXT GENERATIONS
-SHAMAN KING (2021)
-Meitantei Conan
+my_list = """BORUTO: NARUTO NEXT GENERATIONS
 Dragon Quest: Dai no Daibouken (2020)
-Ousama Ranking"""
+Meitantei Conan
+One Piece
+SHAMAN KING (2021)
+Aharen-san wa Hakarenai
+Deaimon
+Heroine Tarumono! Kiraware Heroine to Naisho no Oshigoto
+Kaguya-sama wa Kokurasetai -Ultra Romantic-
+Kawaii dake ja Nai Shikimori-san
+Kingdom 4th Season
+Komi-san wa, Comyushou desu. 2nd Season
+Meitantei Conan: Zero no Nichijou
+Paripi Koumei
+SPY x FAMILY
+Summer Time Render
+Tate no Yuusha no Nariagari Season 2
+Tomodachi Game"""
 list = my_list.split("\n")
 
-my_list2 = """#LeadaleNoDaichiNite
-#Orient
-#Tokyo24ku
-#SlowLoop
-#ShikkakumonNoSaikyouKenja
-#SabikuiBisco
-#FantasyBishoujoJunikuOjisanTo
-#KoroshiAi
-#KimetsuNoYaiba Yuukaku-hen
-#AttackOnTitan Final Season P2
-#KarakaiJouzuNoTakagiSan S3
-#TensaiOujiNoAkaji
-#VanitasNoCarte 2nd Cour
-#OnePiece
-#Boruto
-#ShamanKing
-#DetectiveConan
+my_list2 = """#Boruto
 #DragonQuestDai
-#OusamaRanking"""
+#DetectiveConan
+#OnePiece
+#ShamanKing
+#AharenSanWaHakarenai
+#Deaimon
+#HeroineTarumono
+#KaguyaSama S3
+#KawaiiDake
+#KomiSan S2
+#Kingdom S4
+#ZeroNoNichijou
+#ParipiKoumei
+#SpyxFamily
+#SummertimeRender
+#TateNoYuusha S2
+#TomodachiGame"""
 list2 = my_list2.split("\n")
 
 async def main():
