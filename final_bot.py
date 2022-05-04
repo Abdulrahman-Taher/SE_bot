@@ -68,6 +68,7 @@ while 1:
     info2 = title.split("#")
     ti2 = info2[0][:-1]
     ep2 = info2[1]
+    ep2 = '{:0>2}'.format(ep2)
     if ti1 != ti2 or x == 0:
         #print('if 1 is true')
         if ti2 in list:
