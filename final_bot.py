@@ -4,7 +4,7 @@ import telegram
 
 TELEGRAM_BOT_TOKEN = '5014571744:AAFBHU3UqfoUAFuv4ZXWv7j00r5mhLIdgDQ'
 TELEGRAM_CHAT_ID = '-1001483409081'
-PHOTO_PATH = 'https://drive.google.com/file/d/1J1tJGlyzKK1kohHry1wuC6f-gloy27u_/view?usp=sharing'
+PHOTO_PATH = 'https://drive.google.com/file/d/1LK7RJimIAbxZj01UWJzR8S1AkW4qgyeF/view?usp=sharing'
 FEED_URL = 'https://www.livechart.me/feeds/episodes'
 
 bot = telegram.Bot(token=TELEGRAM_BOT_TOKEN)
@@ -22,40 +22,38 @@ my_list = """BORUTO: NARUTO NEXT GENERATIONS
 Dragon Quest: Dai no Daibouken (2020)
 Meitantei Conan
 One Piece
-SHAMAN KING (2021)
-Aharen-san wa Hakarenai
-Deaimon
-Heroine Tarumono! Kiraware Heroine to Naisho no Oshigoto
-Kaguya-sama wa Kokurasetai -Ultra Romantic-
-Kawaii dake ja Nai Shikimori-san
 Kingdom 4th Season
-Komi-san wa, Comyushou desu. 2nd Season
-Meitantei Conan: Zero no Nichijou
-Paripi Koumei
-SPY x FAMILY
+Aoashi
 Summer Time Render
-Tate no Yuusha no Nariagari Season 2
-Tomodachi Game"""
+Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 2nd Season
+Engage Kiss
+Hataraku Maou-sama!!
+Isekai Ojisan
+Lycoris Recoil
+MADE IN ABYSS: Retsujitsu no Ougonkyo
+Overlord IV
+SHADOWS HOUSE 2nd Season
+Soredemo Ayumu wa Yosetekuru
+Yofukashi no Uta"""
 list = my_list.split("\n")
 
 my_list2 = """#Boruto
 #DragonQuestDai
 #DetectiveConan
 #OnePiece
-#ShamanKing
-#AharenSanWaHakarenai
-#Deaimon
-#HeroineTarumono
-#KaguyaSama S3
-#KawaiiDake
 #Kingdom S4
-#KomiSan S2
-#ZeroNoNichijou
-#ParipiKoumei
-#SpyxFamily
+#Aoashi
 #SummertimeRender
-#TateNoYuusha S2
-#TomodachiGame"""
+#ClassroomOfTheElite S2
+#EngageKiss
+#HatarakuMaouSama!!
+#IsekaiOjisan
+#LycorisRecoil
+#MadeInAbyss
+#OverlordIV
+#ShadowsHouse S2
+#SoredemoAyumuWaYosetekuru
+#YofukashiNoUta"""
 list2 = my_list2.split("\n")
 
 async def main():
